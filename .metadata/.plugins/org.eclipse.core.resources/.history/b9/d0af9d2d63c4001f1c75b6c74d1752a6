@@ -1,0 +1,26 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scanner = new Scanner(System.in);
+		
+		Metodos<Integer> numerosMetodos = new Metodos<Integer>(); // aqui definimos o tipo que a classe "Método" terá
+		
+		int n1 = 8;
+		int n2 = 10;
+		int n3 = 2;
+		
+		numerosMetodos.adicionarItem(n1);
+		numerosMetodos.adicionarItem(n2);
+		numerosMetodos.adicionarItem(n3);
+		
+		numerosMetodos.printar();
+
+	}
+
+}

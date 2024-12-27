@@ -1,0 +1,4 @@
+Cama,1569
+TV,3499
+Celular,3699
+Mouse,21

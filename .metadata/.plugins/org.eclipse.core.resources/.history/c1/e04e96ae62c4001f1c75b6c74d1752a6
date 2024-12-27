@@ -1,0 +1,28 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Metodos<T> { // definimos que ele terá um tipo que será determinado depois
+	
+	public List<T> lista = new ArrayList<>();
+	
+	public T Metodos(){
+		return lista.get(0);
+	}
+	
+	public void adicionarItem(T item) {
+		lista.add(item);
+	}
+	
+	public void printar() {
+		System.out.print("[");
+		if (!lista.isEmpty()) {
+			System.out.print(lista.get(0));
+		}
+		for (int i = 1; i < lista.size(); i++) {
+			System.out.print(", " + lista.get(i));
+		}
+		System.out.println("]");
+	}
+}

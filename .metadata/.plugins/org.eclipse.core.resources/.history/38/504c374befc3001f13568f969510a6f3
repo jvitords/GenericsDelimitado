@@ -1,0 +1,29 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scanner = new Scanner(System.in);
+		
+		Metodos<Integer> numerosMetodos = new Metodos<Integer>();
+		
+		System.out.print("Digite: ");
+		int n1 = scanner.nextInt();
+		System.out.print("Digite: ");
+		int n2 = scanner.nextInt();
+		System.out.print("Digite: ");
+		int n3 = scanner.nextInt();
+		
+		numerosMetodos.adicionarItem(n1);
+		numerosMetodos.adicionarItem(n2);
+		numerosMetodos.adicionarItem(n3);
+		
+		numerosMetodos.printar();
+
+	}
+
+}

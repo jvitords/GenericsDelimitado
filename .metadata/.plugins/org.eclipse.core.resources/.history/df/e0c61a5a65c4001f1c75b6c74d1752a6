@@ -1,0 +1,21 @@
+package serivces;
+
+import java.util.List;
+
+public class ServicoMaximo {
+
+	public static <T extends Comparable<T>> T calclularMaxima(List<T> listaDeItens) {
+		
+		if(listaDeItens.isEmpty()) {
+			throw new IllegalStateException("Não existe itens na lista!");
+		}
+		
+		T maximoDaLista = listaDeItens.get(0);
+		for(T item : listaDeItens) {
+			if(item.compareTo(maximoDaLista) > 0) {
+				maximoDaLista = item;
+			}
+		}
+		return maximoDaLista;
+	}
+}

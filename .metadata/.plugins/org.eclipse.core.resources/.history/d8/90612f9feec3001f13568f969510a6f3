@@ -1,0 +1,13 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Metodos<T> {
+	
+	public List<T> lista = new ArrayList<>();
+	
+	public T Metodos(){
+		return lista.get(0);
+	}
+}
